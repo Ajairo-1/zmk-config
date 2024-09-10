@@ -108,6 +108,30 @@
                 <&macro_release>,
                 <&kp LSHFT &kp LCTRL>;
         };
+
+        cmd_shift_opt_1: command_shift_option_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LSHIFT &kp LALT>,
+                <&macro_tap>,
+                <&kp N1>,
+                <&macro_release>,
+                <&kp LGUI &kp LSHIFT &kp LALT>;
+        };
+
+        cmd_shift_opt_2: command_shift_option_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LSHIFT &kp LALT>,
+                <&macro_tap>,
+                <&kp N2>,
+                <&macro_release>,
+                <&kp LGUI &kp LSHIFT &kp LALT>;
+        };
     };
 
     conditional_layers {
@@ -178,16 +202,16 @@
 
         tri_layer {
             // -----------------------------------------------------------------------------------------
-            // |      |     |     |     |     |     |   |     |     |     |     |     |      |
+            // |      |CS01 |CS02 |     |     |     |   |     |     |     |     |     |      |
             // |      |     |     |     |     |     |   |     | W← M|     | W→ M|     |      |
             // |      |     |     |     |     |     |   |     | W← W|     | W→ W|     |      |
             //                    |     |     |     |   |     |     |     |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &word_left_mac  &trans  &word_right_mac  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &word_left_win  &trans  &word_right_win  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans          &trans
+&trans  &cmd_shift_opt_1  &cmd_shift_opt_2  &trans  &trans  &trans    &trans  &trans          &trans  &trans           &trans  &trans
+&trans  &trans            &trans            &trans  &trans  &trans    &trans  &word_left_mac  &trans  &word_right_mac  &trans  &trans
+&trans  &trans            &trans            &trans  &trans  &trans    &trans  &word_left_win  &trans  &word_right_win  &trans  &trans
+                                            &trans  &trans  &trans    &trans  &trans          &trans
             >;
         };
     };
