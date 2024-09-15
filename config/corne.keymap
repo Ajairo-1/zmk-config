@@ -203,9 +203,9 @@
             //                    |     |     |     |   |     |     |     |
 
             bindings = <
-&trans  &cmd_shift_opt_1  &cmd_shift_opt_2  &trans  &trans  &trans    &kp HOME  &trans          &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
-&trans  &trans            &trans            &trans  &trans  &trans    &kp END   &word_left_mac  &trans  &word_right_mac    &trans           &trans
-&trans  &trans            &trans            &trans  &trans  &trans    &trans    &word_left_win  &trans  &word_right_win    &trans           &trans
+&trans  &cmd_shift_opt_1  &cmd_shift_opt_2  &trans  &trans  &trans    &kp HOME  &trans          &trans  &kp F11          &kp F12  &trans
+&trans  &trans            &trans            &trans  &trans  &trans    &kp END   &word_left_mac  &trans  &word_right_mac  &trans   &trans
+&trans  &trans            &trans            &trans  &trans  &trans    &trans    &word_left_win  &trans  &word_right_win  &trans   &trans
                                             &trans  &trans  &trans    &trans    &trans          &trans
             >;
         };
