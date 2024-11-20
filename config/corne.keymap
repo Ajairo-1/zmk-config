@@ -127,6 +127,20 @@
                 <&macro_release>,
                 <&kp LGUI &kp LSHIFT &kp LALT>;
         };
+
+        cmd_shift_opt_3: cmd_shift_opt_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LSHIFT &kp LALT>,
+                <&macro_tap>,
+                <&kp N3>,
+                <&macro_release>,
+                <&kp LGUI &kp LSHIFT &kp LALT>;
+
+            label = "CMD_SHIFT_OPT_3";
+        };
     };
 
     conditional_layers {
@@ -203,8 +217,8 @@
             //                    |     |     |     |   |     |     |     |
 
             bindings = <
-&trans  &cmd_shift_opt_1  &cmd_shift_opt_2  &kp PAGE_UP    &kp F2  &trans    &kp HOME  &trans          &trans  &kp F11          &kp F12  &trans
-&trans  &trans            &trans            &kp PAGE_DOWN  &kp F5  &trans    &kp END   &word_left_mac  &trans  &word_right_mac  &trans   &trans
+&trans  &cmd_shift_opt_1  &cmd_shift_opt_3  &kp PAGE_UP    &kp F2  &trans    &kp HOME  &trans          &trans  &kp F11          &kp F12  &trans
+&trans  &cmd_shift_opt_3  &trans            &kp PAGE_DOWN  &kp F5  &trans    &kp END   &word_left_mac  &trans  &word_right_mac  &trans   &trans
 &trans  &trans            &trans            &trans         &trans  &trans    &trans    &word_left_win  &trans  &word_right_win  &trans   &trans
                                             &trans         &trans  &trans    &trans    &trans          &trans
             >;
