@@ -163,11 +163,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LGUI &kp LSHIFT>,
+                <&kp LGUI &kp LCTRL>,
                 <&macro_tap>,
                 <&kp N6>,
                 <&macro_release>,
-                <&kp LGUI &kp LSHIFT>;
+                <&kp LGUI &kp LCTRL>;
 
             label = "CMD_SHIFT_OPT_6";
         };
