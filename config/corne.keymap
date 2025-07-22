@@ -231,6 +231,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <38 39>;
         };
+
+        layer_four {
+            bindings = <&lt 1 RIGHT_SHIFT>;
+            key-positions = <37 35>;
+        };
     };
 
     keymap {
@@ -289,10 +294,19 @@
             //                    |     |     |     |   |     |     |     |
 
             bindings = <
-&trans  &cmd_shift_opt_1  &cmd_shift_opt_2            &kp PAGE_UP                    &kp F2                        &trans              &kp HOME  &trans          &trans  &kp F11          &kp F12  &trans
-&trans  &cmd_shift_opt_3  &trans                      &kp PAGE_DOWN                  &kp F5                        &trans              &kp END   &word_left_mac  &trans  &word_right_mac  &trans   &trans
-&trans  &trans            &windows_stopRecord_ShareX  &windows_screenCapture_ShareX  &windows_screenRecord_ShareX  &cmd_shift_opt_6    &trans    &word_left_win  &trans  &word_right_win  &trans   &trans
+&trans  &cmd_shift_opt_1  &cmd_shift_opt_2            &kp PAGE_UP                    &kp F2                        &trans              &kp HOME  &kp F8          &kp F10  &kp F11          &kp F12  &trans
+&trans  &cmd_shift_opt_3  &trans                      &kp PAGE_DOWN                  &kp F5                        &trans              &kp END   &word_left_mac  &trans   &word_right_mac  &trans   &trans
+&trans  &trans            &windows_stopRecord_ShareX  &windows_screenCapture_ShareX  &windows_screenRecord_ShareX  &cmd_shift_opt_6    &trans    &word_left_win  &trans   &word_right_win  &trans   &trans
                                                       &trans                         &trans                        &trans              &trans    &trans          &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp F11  &kp F12  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
