@@ -235,6 +235,7 @@
         layer_four {
             bindings = <&lt 1 RIGHT_SHIFT>;
             key-positions = <37 35>;
+            layers = <4>;
         };
     };
 
