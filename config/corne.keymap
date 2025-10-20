@@ -233,9 +233,8 @@
         };
 
         layer_four {
-            bindings = <&lt 1 RIGHT_SHIFT>;
+            bindings = <&tog 4>;
             key-positions = <37 35>;
-            layers = <4>;
         };
     };
 
