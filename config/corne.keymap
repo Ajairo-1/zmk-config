@@ -293,7 +293,7 @@
 
             bindings = <
 &trans  &cmd_shift_opt_1  &cmd_shift_opt_2            &cmd_shift_opt_3               &kp F2                        &kp F7              &kp HOME  &kp F8          &kp F10  &kp F11          &kp F12  &trans
-&trans  &cmd_shift_opt_3  &trans                      &kp PAGE_DOWN                  &kp F5                        &kp F6              &kp END   &word_left_mac  &trans   &word_right_mac  &trans   &trans
+&trans  &cmd_shift_opt_3  &trans                      &kp PAGE_DOWN                  &kp F5                        &kp F6              &kp END   &word_left_mac  &kp F9   &word_right_mac  &trans   &trans
 &trans  &trans            &windows_stopRecord_ShareX  &windows_screenCapture_ShareX  &windows_screenRecord_ShareX  &cmd_shift_opt_6    &trans    &word_left_win  &trans   &word_right_win  &trans   &trans
                                                       &trans                         &trans                        &trans              &trans    &trans          &trans
             >;
